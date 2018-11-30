@@ -1,0 +1,14 @@
+{
+    "name": "regiejose/mac-docker-web-stack",
+    "description": "A docker-compose-powered stack to get your PHP project running in no time.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Regie Jose",
+            "email": "redzijose@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
