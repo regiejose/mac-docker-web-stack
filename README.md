@@ -30,6 +30,20 @@ settings, then you need to reload it.
 - `./bin/reload <service_name>` Recreates any service instance
 - `./bin/mysql` Connect to your MariaDb Service
 
+# FAQ
+
+#### How does Docker mounting work ?
+> On the `.env` file there is a `APPLICATION` variable which you can set manualy to any folder.
+> This gets mounted to the Docker workspace to the folder `/var/www`
+
+#### How to add new Nginx vhost ?
+
+> Simply go to `./services/nginx/sites` as this folder gets mounted on the conf.d of nginx directly. After adding new sites, simply run `./bin/reload`
+
+#### Configured vhost already but still the site cannot be reached ?
+
+> Make sure to add your server name(s) on `etc/hosts` file (may require sudo privilege)
+
 # Warranties
 
 - This stack was built on `macOS Sierra` v10.12.5. Experience may vary on other operating systems.
